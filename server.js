@@ -17,7 +17,7 @@ app.get('/hello', (req, res) => {
 
 app.get('/health', (req, res) => {
     res.status(200).json({
-        status: 'okay',
+        status: 'good',
         timestamp: new Date().toISOString(),
         uptime: process.uptime(),
         hostname: os.hostname(),
